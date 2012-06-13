@@ -1,6 +1,6 @@
 package Acme::KENO;
 
-use 5.006
+use 5.006;
 use strict;
 use warnings;
 
@@ -10,11 +10,11 @@ Acme::KENO - The great new Acme::KENO!
 
 =head1 VERSION
 
-Version 0.02_01
+Version 0.02_02
 
 =cut
 
-our $VERSION = '0.02_01';
+our $VERSION = '0.02_02';
 
 
 =head1 SYNOPSIS
@@ -26,6 +26,7 @@ Perhaps a little code snippet.
     use Acme::KENO;
 
     my $foo = Acme::KENO->new();
+    $foo->iterator( $coderef );
     ...
 
 =head1 EXPORT
@@ -33,34 +34,39 @@ Perhaps a little code snippet.
 A list of functions that can be exported.  You can delete this section
 if you don't export anything, such as for a purely object-oriented module.
 
-=head1 SUBROUTINES/METHODS
+=head1 METHODS
 
-=head2 function1
-
-=cut
-
-sub function1 {
-}
-
-=head2 function2
+=head2 new
 
 =cut
 
-sub function2 {
+sub new { bless {} => ref( $_[0] ) || $_[0] }
+
+=head2 iterator
+
+=cut
+
+sub iterator { $_[0]->{iterator} }
+
+=head2 set_iterator
+
+=cut
+
+sub set_iterator {
+    my( $self, $iterator ) = @_;
+    $self->{iterator} = $iterator;
+    return $self;
 }
 
 =head1 AUTHOR
 
-keno, C<< <keno at cpan.org> >>
+Ken Olstad, C<< <keno at cpan.org> >>
 
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-acme-keno at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Acme-KENO>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
-
-
 
 =head1 SUPPORT
 
