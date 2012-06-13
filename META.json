@@ -33,7 +33,7 @@
    "provides" : {
       "Acme::KENO" : {
          "file" : "lib/Acme/KENO.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -42,5 +42,5 @@
          "http://opensource.org/licenses/gpl-license.php"
       ]
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

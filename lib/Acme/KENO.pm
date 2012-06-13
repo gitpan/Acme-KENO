@@ -1,6 +1,6 @@
 package Acme::KENO;
 
-use 5.006;
+use 5.006
 use strict;
 use warnings;
 
@@ -14,7 +14,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
