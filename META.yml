@@ -16,9 +16,9 @@ name: Acme-KENO
 provides:
   Acme::KENO:
     file: lib/Acme/KENO.pm
-    version: 0.02
+    version: 0.02_01
 requires:
   perl: 5.006
 resources:
   license: http://opensource.org/licenses/gpl-license.php
-version: 0.02
+version: 0.02_01
