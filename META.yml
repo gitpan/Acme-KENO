@@ -1,0 +1,24 @@
+---
+abstract: 'The great new Acme::KENO!'
+author:
+  - 'keno <keno@cpan.org>'
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.39
+dynamic_config: 1
+generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630'
+license: open_source
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Acme-KENO
+provides:
+  Acme::KENO:
+    file: lib/Acme/KENO.pm
+    version: 0.01
+requires:
+  perl: 5.006
+resources:
+  license: http://opensource.org/licenses/gpl-license.php
+version: 0.01
